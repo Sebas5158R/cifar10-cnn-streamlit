@@ -27,15 +27,43 @@ El modelo fue desarrollado en Google Colab para garantizar velocidad y precisió
 ### 1. Prerrequisitos
 Asegúrate de tener Python instalado en tu sistema (versión 3.9 a 3.11 recomendada).
 
-### 2. Instalar dependencias ligeras
-Dado que el modelo ya está entrenado, no necesitas descargar paquetes pesados de GPU en tu PC. Abre tu terminal en la carpeta del proyecto e instala los requerimientos básicos:
+### 2. Clonar el repositorio y Crear el Entorno Virtual
+Abre tu terminal (CMD, PowerShell o Git Bash), navega hasta la carpeta del proyecto y ejecuta los siguientes comandos según tu sistema operativo:
+
+**En Windows (CMD o PowerShell):**
 ```bash
+# Crear el entorno virtual llamado 'venv'
+python -m venv venv
+
+# Activar el entorno virtual
+.\venv\Scripts\activate
+```
+
+**En macOS / Linux (Terminal):**
+```bash
+# Crear el entorno virtual llamado 'venv'
+python3 -m venv venv
+
+# Activar el entorno virtual
+source venv/bin/activate
+```
+
+*💡 Sabrás que se activó correctamente porque verás `(venv)` al inicio de la línea de tu terminal.*
+
+### 3. Instalar dependencias ligeras
+Con el entorno virtual activo, instala los requerimientos básicos del proyecto sin alterar el resto de tu sistema:
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 3. Lanzar la Aplicación Web
+### 4. Lanzar la Aplicación Web
 Para levantar el servidor local de Streamlit y probar el clasificador con tus propias imágenes, ejecuta:
 ```bash
 streamlit run app.py
 ```
 Automáticamente se abrirá una pestaña en tu navegador web en la dirección `http://localhost:8501`. ¡Arrastra cualquier imagen y observa la predicción en tiempo real!
+
+---
+*Nota: Cuando termines de usar la aplicación, puedes cerrar el entorno virtual en tu terminal escribiendo simplemente el comando `deactivate`.*
+
