@@ -10,7 +10,7 @@ El modelo es capaz de reconocer las siguientes 10 clases:
 
 ## 📁 Estructura del Repositorio
 
-* `notebook_experimento.ipynb`: Cuaderno de **Google Colab** utilizado para la carga del dataset, visualización, diseño de la arquitectura CNN, entrenamiento optimizado con precisión mixta (Mixed Precision) y exportación del modelo.
+* `RedNeuronalConvolucional_CNN.ipynb`: Cuaderno de **Google Colab** utilizado para la carga del dataset, visualización, diseño de la arquitectura CNN, entrenamiento optimizado con precisión mixta (Mixed Precision) y exportación del modelo.
 * `entrenamiento.py`: Script de respaldo en Python que replica la lógica y arquitectura de bloques convolucionales ejecutada en la nube.
 * `modelo_cifar10.keras`: Archivo binario con los pesos del modelo entrenado en Colab, listo para producción.
 * `app.py`: Aplicación web interactiva de **Streamlit** que carga el modelo localmente y procesa las imágenes del usuario.
